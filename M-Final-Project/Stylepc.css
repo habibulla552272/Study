@@ -1,0 +1,57 @@
+@media screen and (min-width:768px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+     .container{
+         width: 90%;
+         margin: 0 auto;
+     }
+     
+    
+     /* nav design  */
+     .nav-div{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: relative;
+         padding: 20px 0;
+     }
+     .nav-mid{
+         position: static;
+         width:fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+     
+     }
+     .nav-mid ul{
+         display: flex;
+         flex-direction: row;
+         gap: 20px;
+         list-style: none;
+         text-align: center;
+        
+     
+     }
+     
+     .nav-mid ul a{
+         text-decoration: none;
+         color: black;
+     }
+     .nav-right-icon{
+       
+         display: flex;
+         gap: 20px;
+         font: 1.2rem;
+         
+         
+     }
+     .nav-right-menubar{
+        display: none;
+     }
+    
+}
