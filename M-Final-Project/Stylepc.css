@@ -6,7 +6,7 @@
     }
 
     .container {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -67,6 +67,7 @@
         background-repeat: no-repeat;
         height: 716px;
         position: relative;
+        object-fit: cover;
 
 
     }
@@ -190,5 +191,35 @@
         
      
      }
+
+     /* section 4  */
+     .section4-div {
+        display: grid;
+        grid-template-columns:  1fr 2fr;
+        justify-content: space-between;
+        grid-gap: 40px;
+        align-items: center;
+
+     }
+     .section4-right{
+         display: grid;
+         grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+         grid-gap: 20px;
+         
+         
+         overflow: hidden;
+         
+        }
+        .section4-right img{
+            width: 100%;
+        }
+        .section4-left{
+           width: 100%;
+           padding-left: 70px;
+        }
+        .section4-right {
+           width: 100%;
+        }
+        
 
 }
