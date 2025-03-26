@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Single Product</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Stylepc.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="singleproduct.css">
     <!-- font awsome link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -22,7 +24,6 @@
 </head>
 
 <body>
-
     <nav>
         <div class="container nav-div">
             <div class="nav-left">
@@ -80,16 +81,17 @@
     <main>
 
         <!-- hero section 1 -->
-        <section class="section-1">
+        <section class="commonHero">
             <div class="container">
-                <div class="hero-card">
-                    <h4>
-                        New Arrival
-                    </h4>
-                    <h2>Discover Our New Collection</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
-                        mattis.</p>
-                    <button class="samebtn1">BUY Now</button>
+                <div class="commonHero-inner">
+                    <h2>
+                        shop
+                    </h2>
+
+                    <p>
+                        <a href="">Home </a> > <a href="">Shop</a>
+                    </p>
+
 
                 </div>
 
@@ -98,39 +100,25 @@
         </section>
 
         <!-- section 2  -->
-        <section class="section2">
-            <div class="section2-div container">
 
-                <div class="section2-top">
-                    <h2>Browse The Range</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-
-                <div class="section2-bottom">
-                    <div class="section2-grid-item">
-                        <img src="Image/Mask Group (1).png" alt="">
-                        <h4>Dining</h4>
-                    </div>
-                    <div class="section2-grid-item">
-                        <img src="Image/Image-living room.png" alt="">
-                        <h4>Living</h4>
-                    </div>
-                    <div class="section2-grid-item">
-                        <img src="Image/Mask Group (4).png" alt="">
-                        <h4>Bedroom</h4>
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </section>
 
         <!-- section 3  -->
-        <section>
+        <!-- <section>
+            <div class="shop-section3">
+                <div style="display: flex; gap: 20px;">
+                    <i class="fa-solid fa-sliders"></i>
+                    <p>Filter</p>
+                    <i class="fa-solid fa-grip"></i>
+                    <p style="padding-left: 20px; border-left: 1px solid gray;">Showing 1–16 of 32 results</p>
+                </div>
+                <div>
+                    <label>Show</label>
+                    <input style=" width: 100px; " type="number" name="" id="" value="14">
+                    <label for="">Short by</label>
+                    <input type="text" name="" id="" placeholder="Default">
+                </div>
+            </div>
             <div class="section3-div container">
-                <h2 class="section3-h2">OUR PRODUCT</h2>
                 <div class="section3-bottom">
                     <div class="section3-bottom-item">
                         <img class="section3-bottom-item-imgage" src="Image/image 1.png" alt="">
@@ -303,97 +291,266 @@
 
 
                 </div>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <ul style="list-style: none; display: flex; gap: 40px;">
+                        <li style="background-color: rgba(249, 241, 231, 1); padding: 10px;">1</li>
+                        <li style="background-color: rgba(249, 241, 231, 1); padding: 10px;">2</li>
+                        <li style="background-color: rgba(249, 241, 231, 1); padding: 10px;">4</li>
+                        <li style="background-color: rgba(249, 241, 231, 1); padding: 10px; border-radius: 10px;" >Next</li>
+                    </ul>
+                </div>
             </div>
-        </section>
+        </section> -->
 
-        <!-- section 4  -->
+
+        <!-- single product sectio  -->
         <section>
-            <div class="section4-div container">
-                <div class="section4-left">
-                    <h2>50+ Beautiful rooms
-                        inspiration</h2>
-                    <p>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
-                    <button class="samebtn1">Explore More</button>
+            <div class="container single-product-section1-div">
+                <div class="single-product-section1-div-left">
+                    <div  class="single-product-section1-div-left-inner">
+                        <img  src="Image/Outdoor sofa set_2 1.png" alt="">
+                        <img src="Image/Group 94.png" alt="">
+                        <img src="Image/Stuart sofa 1.png" alt="">
+                    </div>
+                    <img src="Image/Asgaard sofa 3.png" alt="">
                 </div>
-                <div class="section4-right">
-                    <div class="section4-right-gird1">
-                        <img src="Image/Rectangle 24.png" alt="section4 image">
-                        <div class="section4-right-gird1-inner">
-                            <div>
-                                <p>01-----Bed Room</p>
-                                <h2>Inner peace</h2>
+                <div>
+                    <h2>Asgaard sofa</h2>
+                    <p style="padding: 10px 0;">Rs. 250,000.00</p>
+                    <p style="display: flex; gap: 20px; padding: 20px 0;">
+                        <span style="color: orange;">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+
+                        <span style="padding-left: 20px; border-left: 2px solid gray;">5 Customer Review</span>
+                    </p>
+                    <p>Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact,
+                        stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs
+                        for a sound.
+
+                    </p>
+
+                    <p>
+                        Size
+                    </p>
+                    <p style="display: flex; gap: 20px; padding-top: 10px;">
+                        <span style="font-weight: 400; font-size: 13px; background-color: rgba(249, 241, 231, 1); padding: 10px;">
+                            L
+                        </span>
+                        <span style="font-weight: 400; font-size: 13px; background-color: rgba(249, 241, 231, 1); padding: 10px;">
+                            XL
+                        </span>
+                        <span style="font-weight: 400; font-size: 13px; background-color: rgba(249, 241, 231, 1); padding: 10px;">
+                            XS
+                        </span>
+                    </p>
+                    <p>
+                        Color
+                    </p>
+                    <p style="display: flex; gap: 20px; padding-top: 10px;">
+                        <span style="padding: 20px; background-color: rgba(129, 109, 250, 1); border-radius: 50%;">
+
+                        </span>
+                        <span style="padding: 20px; background-color: rgba(129, 109, 250, 1); border-radius: 50%;">
+                            
+                        </span>
+                        <span style="padding: 20px; background-color: rgba(129, 109, 250, 1); border-radius: 50%;">
+
+                        </span>
+                    </p>
+                    <div style="display: flex; justify-content: space-between; padding-top: 20px;">
+                        <p style="border: 1px solid gray; display: flex;gap: 20px; padding: 10px; border-radius: 10px;"><span>-</span> <span>1</span> <span>+</span></p>
+                        <button style="border: 1px solid gray; display: flex;gap: 20px; padding: 10px; border-radius: 10px;">Add to Cart</button>
+                        <button style="border: 1px solid gray; display: flex;gap: 20px; padding: 10px; border-radius: 10px;">+ Compare</button>
+                    </div>
+
+                    <div class="" style="padding-top: 30px; display: flex; flex-direction: column; gap: 20px; border-top: 1px solid gray; margin-top: 20px;">
+                        <p >
+                            <span>SKU</span> <span>:SS001</span>
+                        </p>
+                        <p>
+                            <span>Category</span> <span>:SS001</span>
+                        </p>
+                        <p>
+                            <span>Tags</span> <span>:sofa,Shair,Home,shop</span>
+                        </p>
+                        <p>
+                            <span>Share</span> <span>: 
+                            <span>
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </span>
+                        </span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- single product section 2 -->
+        <section>
+            <div class="container single-product-section3-div">
+                <div class="single-product-section3-div-top">
+                    <ul >
+                        <li style="font-weight: 500; font-size: 24px; color: rgba(0, 0, 0, 1);">Description</li>
+                        <li style="font-weight: 400; font-size: 24px; color: rgba(159, 159, 159, 1);">Additional Information</li>
+                        <li style="font-weight: 400; font-size: 24px; color: rgba(159, 159, 159, 1);">Reviews [5]</li>
+                    </ul>
+                    <p style="font-weight: 400; font-size: 16px; color: rgba(159, 159, 159, 1); padding: 20px 0;">Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.</p>
+                    <p style="font-weight: 400; font-size: 16px; color: rgba(159, 159, 159, 1); padding: 20px 0;">Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.</p>
+                </div>
+                <div class="single-product-section3-div-bottom">
+                    <img src="Image/Mask group (2).png" alt="">
+                    <img src="Image/Mask group (3).png" alt="">
+                </div>
+            </div>
+        </section>
+
+           <section>
+            <div class="section3-div container">
+                <h2 class="section3-h2">Related Products</h2>
+                <div class="section3-bottom">
+                    <div class="section3-bottom-item">
+                        <img class="section3-bottom-item-imgage" src="Image/image 1.png" alt="">
+                        <div class="section3-bottom-inner-div">
+                            <h2 class="section3-bottom-inner-h2">Syltherine</h2>
+                            <p class="section3-bottom-inner-p1">stylish cafe chair</p>
+                            <p class="section3-bottom-inner-p2">
+                                Rp 2,500.00 <span>Rp35,500.00</span>
+                            </p>
+                        </div>
+                        <div class="section3-bottom-item-inner">
+                            <div class="section3-bottom-item-inner-div">
+                                <button>Add to cart</button>
+                                <p>
+                                    <span><i class="fa-solid fa-square-share-nodes"></i>shear</span>
+                                    <span><i class="fa-solid fa-code-compare"></i>Compare</span>
+                                    <span><i class="fa-regular fa-heart"></i>Like</span>
+                                </p>
+
                             </div>
-                            <button>aroow</button>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 10px;">
-                        <div>
-                            <img src="Image/Rectangle 25.png" alt="section4 image">
-                            <img class="" style="display: block; padding: 15px 0 0 15px; width: 50px;"
-                                src="Image/Indicator.png" alt="">
+                    <div class="section3-bottom-item">
+                        <img class="section3-bottom-item-imgage" src="Image/image 1.png" alt="">
+                        <div class="section3-bottom-inner-div">
+                            <h2 class="section3-bottom-inner-h2">Syltherine</h2>
+                            <p class="section3-bottom-inner-p1">stylish cafe chair</p>
+                            <p class="section3-bottom-inner-p2">
+                                Rp 2,500.00 <span>Rp35,500.00</span>
+                            </p>
                         </div>
-                        <div>
-                            <img src="Image/Rectangle 26.png" alt="">
+                        <div class="section3-bottom-item-inner">
+                            <div class="section3-bottom-item-inner-div">
+                                <button>Add to cart</button>
+                                <p>
+                                    <span><i class="fa-solid fa-square-share-nodes"></i>shear</span>
+                                    <span><i class="fa-solid fa-code-compare"></i>Compare</span>
+                                    <span><i class="fa-regular fa-heart"></i>Like</span>
+                                </p>
+
+                            </div>
                         </div>
                     </div>
+                    <div class="section3-bottom-item">
+                        <img class="section3-bottom-item-imgage" src="Image/image 1.png" alt="">
+                        <div class="section3-bottom-inner-div">
+                            <h2 class="section3-bottom-inner-h2">Syltherine</h2>
+                            <p class="section3-bottom-inner-p1">stylish cafe chair</p>
+                            <p class="section3-bottom-inner-p2">
+                                Rp 2,500.00 <span>Rp35,500.00</span>
+                            </p>
+                        </div>
+                        <div class="section3-bottom-item-inner">
+                            <div class="section3-bottom-item-inner-div">
+                                <button>Add to cart</button>
+                                <p>
+                                    <span><i class="fa-solid fa-square-share-nodes"></i>shear</span>
+                                    <span><i class="fa-solid fa-code-compare"></i>Compare</span>
+                                    <span><i class="fa-regular fa-heart"></i>Like</span>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section3-bottom-item">
+                        <img class="section3-bottom-item-imgage" src="Image/image 1.png" alt="">
+                        <div class="section3-bottom-inner-div">
+                            <h2 class="section3-bottom-inner-h2">Syltherine</h2>
+                            <p class="section3-bottom-inner-p1">stylish cafe chair</p>
+                            <p class="section3-bottom-inner-p2">
+                                Rp 2,500.00 <span>Rp35,500.00</span>
+                            </p>
+                        </div>
+                        <div class="section3-bottom-item-inner">
+                            <div class="section3-bottom-item-inner-div">
+                                <button>Add to cart</button>
+                                <p>
+                                    <span><i class="fa-solid fa-square-share-nodes"></i>shear</span>
+                                    <span><i class="fa-solid fa-code-compare"></i>Compare</span>
+                                    <span><i class="fa-regular fa-heart"></i>Like</span>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                </div>
+                <div class="" style="display: flex; justify-content: center; padding: 20px 0;">
+                    <button style="border: 1px solid rgba(184, 142, 47, 1); padding: 10px 15px; border-radius: 10px; font-size: 16px; ">See More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- section  last-->
+        <section class="commonlast-section">
+            <div class="container commonlast-section-div">
+                <div class="commonlast-section-div-inner">
+                    <img src="Image/trophy 1.png" alt="">
+                    <div>
+
+                        <h2>High Quality</h2>
+                        <p>crafted from top materials</p>
+                    </div>
+                </div>
+                <div class="commonlast-section-div-inner">
+                    <img src="Image/Group.png" alt="">
+                    <div>
+
+                        <h2>High Quality</h2>
+                        <p>crafted from top materials</p>
+                    </div>
+                </div>
+                <div class="commonlast-section-div-inner">
+                    <img src="Image/shipping.png" alt="">
+                    <div>
+                        <h2>High Quality</h2>
+                        <p>crafted from top materials</p>
+                    </div>
+                </div>
+                <div class="commonlast-section-div-inner">
+                    <img src="Image/customer-support.png" alt="">
+                    <div>
+
+                    </div>
+                    <h2>High Quality</h2>
+                    <p>crafted from top materials</p>
                 </div>
             </div>
         </section>
 
 
-        <!-- section 5  -->
-        <section class="gallery">
-
-            <h2>Share your setup with
-                <span>#FuniroFurniture
-                </span>
-            </h2>
-
-            <div class="section5-bottom">
-                <div class="section5-bottom1">
-                    <div class="section5-bottom-inner">
-                        <img class="section5-grid-img1" src="Image/Rectangle 36.png" alt="Image 1">
-
-                        <img class="section5-grid-img2" src="Image/Rectangle 38.png" alt="Image 2">
-                    </div>
-                    <div class="section5-bottom-inner">
-                        <img class="section5-grid-img6" src="Image/Rectangle 37.png" alt="Image 6">
-
-                        <img class="section5-grid-img7" src="Image/Rectangle 39.png" alt="Image 7">
-                    </div>
-
-
-                </div>
-                <div class="section5-bottom2">
-                    <img src="Image/Rectangle 40.png" alt="Image 3">
-
-                </div>
-                <div class="section5-bottom3">
-                    <div class="section5-bottom-inner">
-
-                        <img class="section5-grid-img4" src="Image/Rectangle 43.png" alt="Image 4">
-
-                        <img class="section5-grid-img5" src="Image/Rectangle 45.png" alt="Image 5">
-                    </div>
-                    <div class="section5-bottom-inner">
-                        <img class="section5-grid-img8" src="Image/Rectangle 40.png" alt="Image 8">
-
-                        <img class="section5-grid-img9" src="Image/Rectangle 40.png" alt="Image 8">
-                    </div>
-                </div>
 
 
 
-
-
-
-
-
-
-
-            </div>
-
-        </section>
     </main>
     <footer>
         <div class="container">

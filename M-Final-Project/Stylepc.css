@@ -6,7 +6,7 @@
     }
 
     .container {
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -261,6 +261,14 @@
         .section5-bottom3{
         
             width: 33%;
+        }
+
+        /* fotter  */
+        .footer-div-top1{
+            grid-column: span 1;
+        }
+        .footer-div-top4{
+            grid-column: span 1;
         }
 
 }

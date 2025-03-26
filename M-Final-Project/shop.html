@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>shop</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Stylepc.css">
     <!-- font awsome link  -->
@@ -19,10 +19,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
 </head>
 
 <body>
-
     <nav>
         <div class="container nav-div">
             <div class="nav-left">
@@ -80,16 +80,17 @@
     <main>
 
         <!-- hero section 1 -->
-        <section class="section-1">
+        <section class="commonHero">
             <div class="container">
-                <div class="hero-card">
-                    <h4>
-                        New Arrival
-                    </h4>
-                    <h2>Discover Our New Collection</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
-                        mattis.</p>
-                    <button class="samebtn1">BUY Now</button>
+                <div class="commonHero-inner">
+                    <h2>
+                        shop
+                    </h2>
+
+                    <p>
+                        <a href="">Home </a> > <a href="">Shop</a>
+                    </p>
+
 
                 </div>
 
@@ -98,39 +99,25 @@
         </section>
 
         <!-- section 2  -->
-        <section class="section2">
-            <div class="section2-div container">
 
-                <div class="section2-top">
-                    <h2>Browse The Range</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-
-                <div class="section2-bottom">
-                    <div class="section2-grid-item">
-                        <img src="Image/Mask Group (1).png" alt="">
-                        <h4>Dining</h4>
-                    </div>
-                    <div class="section2-grid-item">
-                        <img src="Image/Image-living room.png" alt="">
-                        <h4>Living</h4>
-                    </div>
-                    <div class="section2-grid-item">
-                        <img src="Image/Mask Group (4).png" alt="">
-                        <h4>Bedroom</h4>
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </section>
 
         <!-- section 3  -->
         <section>
+            <div class="shop-section3">
+                <div style="display: flex; gap: 20px;">
+                    <i class="fa-solid fa-sliders"></i>
+                    <p>Filter</p>
+                    <i class="fa-solid fa-grip"></i>
+                    <p style="padding-left: 20px; border-left: 1px solid gray;">Showing 1–16 of 32 results</p>
+                </div>
+                <div>
+                    <label>Show</label>
+                    <input style=" width: 100px; " type="number" name="" id="" value="14">
+                    <label for="">Short by</label>
+                    <input type="text" name="" id="" placeholder="Default">
+                </div>
+            </div>
             <div class="section3-div container">
-                <h2 class="section3-h2">OUR PRODUCT</h2>
                 <div class="section3-bottom">
                     <div class="section3-bottom-item">
                         <img class="section3-bottom-item-imgage" src="Image/image 1.png" alt="">
@@ -303,97 +290,59 @@
 
 
                 </div>
-            </div>
-        </section>
-
-        <!-- section 4  -->
-        <section>
-            <div class="section4-div container">
-                <div class="section4-left">
-                    <h2>50+ Beautiful rooms
-                        inspiration</h2>
-                    <p>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
-                    <button class="samebtn1">Explore More</button>
-                </div>
-                <div class="section4-right">
-                    <div class="section4-right-gird1">
-                        <img src="Image/Rectangle 24.png" alt="section4 image">
-                        <div class="section4-right-gird1-inner">
-                            <div>
-                                <p>01-----Bed Room</p>
-                                <h2>Inner peace</h2>
-                            </div>
-                            <button>aroow</button>
-                        </div>
-                    </div>
-                    <div style="display: flex; gap: 10px;">
-                        <div>
-                            <img src="Image/Rectangle 25.png" alt="section4 image">
-                            <img class="" style="display: block; padding: 15px 0 0 15px; width: 50px;"
-                                src="Image/Indicator.png" alt="">
-                        </div>
-                        <div>
-                            <img src="Image/Rectangle 26.png" alt="">
-                        </div>
-                    </div>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <ul style="list-style: none; display: flex; gap: 40px;">
+                        <li style="background-color: rgba(249, 241, 231, 1); padding: 10px;">1</li>
+                        <li style="background-color: rgba(249, 241, 231, 1); padding: 10px;">2</li>
+                        <li style="background-color: rgba(249, 241, 231, 1); padding: 10px;">4</li>
+                        <li style="background-color: rgba(249, 241, 231, 1); padding: 10px; border-radius: 10px;" >Next</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
 
-        <!-- section 5  -->
-        <section class="gallery">
+        <!-- section  last-->
+         <section class="commonlast-section">
+            <div class="container commonlast-section-div">
+                <div class="commonlast-section-div-inner">
+                    <img src="Image/trophy 1.png" alt="">
+                    <div>
 
-            <h2>Share your setup with
-                <span>#FuniroFurniture
-                </span>
-            </h2>
-
-            <div class="section5-bottom">
-                <div class="section5-bottom1">
-                    <div class="section5-bottom-inner">
-                        <img class="section5-grid-img1" src="Image/Rectangle 36.png" alt="Image 1">
-
-                        <img class="section5-grid-img2" src="Image/Rectangle 38.png" alt="Image 2">
-                    </div>
-                    <div class="section5-bottom-inner">
-                        <img class="section5-grid-img6" src="Image/Rectangle 37.png" alt="Image 6">
-
-                        <img class="section5-grid-img7" src="Image/Rectangle 39.png" alt="Image 7">
-                    </div>
-
-
-                </div>
-                <div class="section5-bottom2">
-                    <img src="Image/Rectangle 40.png" alt="Image 3">
-
-                </div>
-                <div class="section5-bottom3">
-                    <div class="section5-bottom-inner">
-
-                        <img class="section5-grid-img4" src="Image/Rectangle 43.png" alt="Image 4">
-
-                        <img class="section5-grid-img5" src="Image/Rectangle 45.png" alt="Image 5">
-                    </div>
-                    <div class="section5-bottom-inner">
-                        <img class="section5-grid-img8" src="Image/Rectangle 40.png" alt="Image 8">
-
-                        <img class="section5-grid-img9" src="Image/Rectangle 40.png" alt="Image 8">
+                        <h2>High Quality</h2>
+                        <p>crafted from top materials</p>
                     </div>
                 </div>
+                <div class="commonlast-section-div-inner">
+                    <img src="Image/Group.png" alt="">
+                    <div>
 
-
-
-
-
-
-
-
-
-
+                        <h2>High Quality</h2>
+                        <p>crafted from top materials</p>
+                    </div>
+                </div>
+                <div class="commonlast-section-div-inner">
+                    <img src="Image/shipping.png" alt="">
+                    <div>
+                        <h2>High Quality</h2>
+                        <p>crafted from top materials</p>
+                    </div>
+                </div>
+                <div class="commonlast-section-div-inner">
+                    <img src="Image/customer-support.png" alt="">
+                    <div>
+                        
+                    </div>
+                    <h2>High Quality</h2>
+                    <p>crafted from top materials</p>
+                </div>
             </div>
+         </section>
+         
 
-        </section>
+
+
+
     </main>
     <footer>
         <div class="container">

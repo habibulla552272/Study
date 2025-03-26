@@ -327,3 +327,52 @@
 
 /* section 5  */
 
+/* footer  */
+footer{
+    margin-top: 50px;
+}
+.footer-div-top{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer-div-top1{
+    grid-column: span 4;
+}
+.footer-div-top4{
+    grid-column: span 4;
+}
+.footer-div-top p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: rgba(159, 159, 159, 1);
+}
+.footer-div-top ul{
+    font-family: "Poppins", sans-serif;
+    padding: 20px 0;
+    list-style: none;
+}
+.footer-div-top ul a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    padding: 30px 0;
+
+}
+.footer-div-top4 input{
+    border: none;
+    outline: none;
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
+.footer-div-top4 button{
+    border: none;
+    outline: none;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    background-color: transparent;
+    border-bottom: 2px solid gray;
+}
