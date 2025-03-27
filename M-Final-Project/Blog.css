@@ -1,0 +1,48 @@
+.blog-section2-right-top{
+    border: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    align-items: center;
+    border-radius: 10px;
+    input{
+        border: none;
+        outline: none;
+        
+    }
+}
+.blog-section2-right-categories p{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.blog-section2-right-recentPost{
+    display: flex;
+    align-items: center;
+   gap: 20px;
+   padding-top: 20px;
+   span{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(0, 0, 0, 1);
+    padding: 0 0 10px 0;
+    
+   }
+}
+
+
+@media screen and (min-width:768px){
+.blog-section2-div{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-section2-left{
+    width: 70%;
+}
+.blog-section2-right{
+    width: 25%;
+}
+
+}
