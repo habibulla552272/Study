@@ -1,0 +1,18 @@
+
+@font-face {
+    font-family: 'font1';
+    src: url(fonts/SnackerComic_PerosnalUseOnly.ttf);
+}
+@font-face {
+    font-family: 'font2';
+    src: url(fonts/Larrisha\ Script.ttf);
+}
+
+p{
+    font-family: 'font2';
+    font-size: 2rem;
+}
+h2{
+    font-family: font1;
+    color: red;
+}
