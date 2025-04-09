@@ -16,3 +16,24 @@ h2{
     font-family: font1;
     color: red;
 }
+table {
+    border-collapse: collapse;
+    width: 50%;
+    box-sizing: border-box;
+}
+table tr td {
+    border: 1px solid black;
+    vertical-align: middle;
+}
+table th{
+    background-color: greenyellow;
+    height: 30px;
+    vertical-align: middle;
+}
+table th{
+    border: 1px solid black;
+}
+table td{
+    text-align: center;
+    padding: 10px 0;
+}
