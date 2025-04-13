@@ -124,6 +124,35 @@ console.log(5<3); //answer - false less than because 5 not less than 5
 
 
 
+// JavaScript Bitwise Operators
+// Operate on the binary representation of numbers.
+// |	
+// OR	Sets each bit to 1 if one of two bits is 1
+console.log(5|1);
+
+//&	AND	Sets each bit to 1 if both bits are 1
+console.log(5 & 1);
+
+// ~	NOT	Inverts all the bits
+console.log(~5);
+
+// <<	Zero fill left shift	Shifts left by pushing zeros in from the right and let the leftmost bits fall off
+console.log(5 << 1);
+
+// ^	XOR	Sets each bit to 1 if only one of two bits is 1
+console.log(5 ^ 1);
+// >>	Signed right shift	Shifts right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
+console.log(5 >> 1);
+
+// >>>	Zero fill right shift	Shifts right by pushing zeros in from the left, and let the rightmost bits fall off
+console.log(5 >>> 1);
+
+
+
+
+
+
+
 
 
 
