@@ -147,9 +147,46 @@ console.log(5 >> 1);
 // >>>	Zero fill right shift	Shifts right by pushing zeros in from the left, and let the rightmost bits fall off
 console.log(5 >>> 1);
 
+// String Operator
+// Concatenation (+)
+let str1= 'habib'
+let str2= 'islam'
+let str3= str1 +' ' + str2;
+console.log(str3);
+
+// Ternary Operator
+// Syntax: condition ? expression_if_true : expression_if_false
+ 
+let Ternary= 1>2 ? 'habibulla': 'Islam';
+console.log(Ternary); // outpur is Islam because condition is false and 2 grater than 1 
+
+// 10. Relational Operators
+// instanceof – Checks if an object is an instance of a specific class or constructor.
+console.log(42 instanceof Number);
+console.log(new Number(42) instanceof Number);
+let inst=new Number(42)
+console.log(typeof inst); //object new create new object 
 
 
+// 🔹 Types of Array Operations:
 
+const arr =[1,2,4,5,6,7];
+
+arr.splice(2,3,9,10)
+console.log(arr);
+arr.splice(0,0,'habu','sabu')
+console.log(arr);
+
+
+// b. Searching
+
+let arr2=[1,3,5,7,9,11,,5,13];
+
+let indexofV= arr2.indexOf(5,0)+1;
+console.log(indexofV);
+
+
+console.log(arr2.includes(5));
 
 
 
