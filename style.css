@@ -37,3 +37,8 @@ table td{
     text-align: center;
     padding: 10px 0;
 }
+
+#demo{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}

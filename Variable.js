@@ -188,15 +188,58 @@ console.log(indexofV);
 
 console.log(arr2.includes(5));
 
+//Find() method
+// The find() method returns the value of the first array element that passes a test function.
+function myfunction(value){
+    return value >9;
+}
+
+let find=arr2.find(myfunction);
+
+document.getElementById('demo').innerHTML = 'first number over 9 is ' + find;
+
+//findlast 
+// findLast() method that will start from the end of an array and return the value of the first element that satisfies a condition.
+
+const temp= [27,50,30,40,42];
+let high = temp.findLast(x => x > 40)
+console.log(high);
 
 
+// 🧠 What is the work (role) of thisValue in JavaScript map()?
+const multipul={
+    factor:10,
+    multiply(arr){
+        return arr.map(function(num){
+            return num * this.factor;
+        },this)
+    }
+}
+console.log(multipul.multiply([1,3,3]));
+
+const multiplier ={
+    factor:10,
+    multiply(arr){
+        return arr.map(function(num){
+            return num * this.factor;
+        })
+    }
+}
 
 
+console.log(multiplier.multiply([1,3,4]));
+
+// ✅ What is filter()?
+// The filter() method is used to create a new array that contains only the elements that pass a test (condition).
 
 
+const numbers = [1, 2, 3, 4, 5];
 
+const evenNumbers = numbers.filter(function(num) {
+  return num % 2 === 0;
+});
 
-
+console.log(evenNumbers); // [2, 4]
 
 
 
