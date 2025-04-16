@@ -205,6 +205,14 @@ const temp= [27,50,30,40,42];
 let high = temp.findLast(x => x > 40)
 console.log(high);
 
+// let gran=['megnas','setu','habibulla','habu'];
+
+// for(let i=1;i<=gran.length;i++){
+
+//     console.log(gran[i]);
+    
+// }
+
 
 // 🧠 What is the work (role) of thisValue in JavaScript map()?
 const multipul={
@@ -244,9 +252,63 @@ console.log(evenNumbers); // [2, 4]
 
 
 
+let gran=['megnas','setu','habibulla','habu'];
+
+for(let i=0;i<gran.length;i++){
+
+    gran[i]= 'GM'+ ' ' + gran[i]
+    
+}
+console.log(gran);
 
 
+// 📘 JavaScript reduce()
+// ✅ What is reduce()
 
+// const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((acc,curr)=>{
+    return acc= acc+curr;
+},0)
+    
+
+console.log(sum);
+
+
+// 📘 JavaScript sort() — Note
+// ✅ What is sort()?
+// The sort() method in JavaScript is used to sort the elements of an array in place. By default, it sorts values as strings in ascending order.
+const sorts=[55,33,22,77,3,31,];
+const sorts1=[10, 5, 2, 20];
+
+
+sorts.sort();
+console.log(sorts);
+
+sorts1.sort();
+console.log(sorts1);
+
+sorts.sort((a,b)=>{
+   return  a-b;
+});
+console.log(sorts);
+
+sorts1.sort((a,b)=>{
+    return a-b;
+});
+console.log(sorts1);
+
+// 📘 JavaScript reverse() —
+// ✅ What is reverse()?
+// The reverse() method reverses the order of elements in an array. It modifies the original array — the first element becomes last, and the last becomes first.
+const reverses=[1,2,4,5,6,7,8,9];
+reverses.reverse();
+console.log(reverses);
+
+const word='habibulla islam habib'
+
+const reversed= word.split('').reverse().join('');
+console.log(reversed);
+console.log(word);
 
 
 
