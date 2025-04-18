@@ -312,3 +312,4 @@ console.log(word);
 
 
 
+console.log(012);
