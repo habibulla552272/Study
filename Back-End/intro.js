@@ -1,3 +1,44 @@
+//path
+// const path = require('path');
+// const OS =require('os')
+// const fs=require('fs')
+
+// console.log(path.parse(__filename));
+// console.log(path.parse(__dirname));
+
+// console.log('file extension' + path.extname(__filename));
+
+// //OS
+// console.log(OS.version());
+// console.log(OS.totalmem());
+// console.log(OS.freemem());
+// console.log(OS.cpus());
+
+// //File System 
+// fs.readFile(path.join(__dirname,'text.txt'),{encoding:'utf-8'},(data,err)=>{
+//     if(err){
+//         console.log(err);
+        
+//     }else{
+//         console.log(data);
+        
+//     }
+// })
+
+// //file system write
+
+// fs.writeFile(path.join(__dirname,'text.txt'),'this is a new data bro',(err)=>{
+//   if(err){
+//     console.log(err);
+    
+//   }else{
+//     console.log('data saved');
+    
+//   }
+    
+    
+// })
+
 
 // Asynchronous
 // console.log(1);
@@ -62,3 +103,26 @@ function employ(){
 }
 
 employ();
+
+
+//promis
+
+const employeIDS= new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve([1,2,3,4,5,6,7])
+    },2000)
+})
+
+function empBio(data){
+    return new Promise((resolve,reject)=>{
+        setTimeout((id)=>{
+            let employeeBio={
+                id:id,
+                name:'habu',
+                age:30,
+                email:'add@gamil.com'
+            }
+            resolve(employeeBio)
+        },2000,data[2])
+    })
+}
