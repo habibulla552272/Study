@@ -21,4 +21,37 @@ const number2=[1,3,6,7,33,10,55];
 console.log(number2.even());
 
 
+//some add 
 
+function createUser(name,scroe){
+    this.name=name
+    this.scroe=scroe
+
+}
+createUser.prototype.increment=function(){
+    this.scroe++
+}
+createUser.prototype.price=function(price){
+    this.price=price
+}
+createUser.prototype.printMe= function(){
+    console.log(`score is ${this.scroe} `);
+
+}
+createUser.prototype.printPrice=function(){
+    
+    console.log(`${this.name} price is ${this.price}`);
+    
+}
+
+const chai = new createUser('chai',25);
+const tea= new createUser('tea',15);
+
+chai.printMe();
+chai.increment();
+chai.price(50)
+chai.printMe();
+tea.printMe();
+tea.price(100)
+tea.printPrice()
+chai.printPrice()
