@@ -1,23 +1,23 @@
-class TodoList{
-    constructor(name){
-        this.name=`${name} Todo List`
-        this.todoList =[]
+class TodoList {
+    constructor(name) {
+        this.name = `${name} Todo List`
+        this.todoList = []
     }
-    addTask(task){
+    addTask(task) {
         this.todoList.push(task)
     }
 
-    printTasks(){
+    printTasks() {
         console.log(`Taks in ${this.name}:`);
-        this.todoList.forEach((task,index)=>{
-            console.log(`${index+1}...${task} `);
-            
+        this.todoList.forEach((task, index) => {
+            console.log(`${index + 1}...${task} `);
+
         })
-        
+
     }
 }
 
-const personalTodoList =new TodoList('personal');
+const personalTodoList = new TodoList('personal');
 personalTodoList.addTask('buy groceries');
 personalTodoList.addTask('clean the house');
 personalTodoList.addTask('Finish homeWork')
