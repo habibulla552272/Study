@@ -76,7 +76,7 @@
 
 // for(let key in  obj){
 //     console.log(obj[key]);
-    
+
 // }
 
 //object ordered-like-an-object
@@ -88,7 +88,7 @@
 // }
 // for(let code in codes){
 //     console.log(code);
-    
+
 // }
 
 // let user={
@@ -165,48 +165,148 @@
 
 // object methods this 
 
-let user={
-    name:'john',
-    age:40,
-    sayHi(){
-        console.log(this.name);
-        
-    }
-}
+// let user={
+//     name:'john',
+//     age:40,
+//     sayHi(){
+//         console.log(this.name);
 
-user.sayHi();
+//     }
+// }
 
-let admin=user;
+// user.sayHi();
+
+// let admin=user;
 
 // user=null
 
-console.log(admin);
-console.log(user);
+// console.log(admin);
+// console.log(user);
 
-let user2={
-    name:'john'
-}
-let admin2={
-    name:'admin'
-}
-function sayHi(){
-    console.log(this.name);
-    
-}
-user2.f=sayHi;
-admin2.f=sayHi;
+// let user2={
+//     name:'john'
+// }
+// let admin2={
+//     name:'admin'
+// }
+// function sayHi(){
+//     console.log(this.name);
 
-user2.f();
-admin2.f() 
+// }
+// user2.f=sayHi;
+// admin2.f=sayHi;
+
+// user2.f();
+// admin2.f() 
 
 //object-methods#arrow-functions-have-no-this
 
-let user3={
-    firstNmae:'habus',
-    sayHi(){
-        let arrow=()=> console.log(this.firstNmae);
-        arrow();        
-    }
-}
+// let user3={
+//     firstNmae:'habus',
+//     sayHi(){
+//         let arrow=()=> console.log(this.firstNmae);
+//         arrow();        
+//     }
+// }
 
-user3.sayHi();
+// user3.sayHi();
+
+
+// Constructor,operator New  
+
+// function User(name){
+//     this.name=name;
+//     this.isAdmin=false;
+// }
+// let user=new User('habu');
+
+// console.log(user.name );
+// console.log(user.isAdmin);
+
+// OPtional Chaining ?.  
+// let user={}
+// console.log(user.address); //it is problem now what can i do 
+
+// first we use if condition 
+
+// console.log(user.address ? user.address.street :undefined);
+
+// there's a little better way to write it useing the && operator 
+
+// console.log(user.address && user.address.street && user.address.street.name);
+
+
+// now use optional chaining 
+
+// console.log(user.address?.street);
+
+// other variants: ?.(),?.[]
+
+// let userAdmin={
+//     admin(){
+//         console.log('i am admin');
+
+//     }
+// }
+// let userGuest={};
+// userAdmin.admin?.();
+// userGuest.admin?.();
+
+
+// let key = 'firstName';
+// let user1={
+//     firstName:'jhon',
+// };
+// let user3=null;
+// console.log(user1?.[key]);
+// console.log(user1);
+// console.log(user3?.[key]);
+
+// console.log(user3?.name='habu');
+// user3 ?. name = 'habu';
+
+// console.log(user3);
+
+// console.log(user1);
+
+
+// Symbol type 
+let id2 = Symbol('id2');
+let user = {
+    name: 'john',
+    [id2]: 21
+};
+let id = Symbol('id');
+user[id] = 1;
+console.log(user[id]);
+console.log(user[id2]);
+
+for (let key in user) console.log(key);
+
+// .for('id') it is global registry 
+let id3 = Symbol.for('id');
+let id4 = Symbol.for('id');
+
+// both symbols are from the same key in the global registry they are strictly equal.
+console.log(id3 === id4);
+
+let sym = Symbol.for('name');
+let sym2 = Symbol.for("id");
+console.log(Symbol.keyFor(sym));
+console.log(Symbol.keyFor(sym2));
+
+/*The Symbol.keyFor internally 
+uses the global symbol registry
+ to look up the key for the symbol.
+ So it doesn’t work for non-global
+ symbols. If the symbol is not global,
+ it won’t be able to find it and returns undefined. */
+
+ let globalsymbol=Symbol.for('names');
+ let localsymbol=Symbol('names2');
+ console.log(Symbol.keyFor(globalsymbol));
+ console.log(Symbol.keyFor(localsymbol));
+console.log(localsymbol.description);
+
+ 
+
