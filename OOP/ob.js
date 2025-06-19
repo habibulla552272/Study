@@ -271,29 +271,29 @@
 
 
 // Symbol type 
-let id2 = Symbol('id2');
-let user = {
-    name: 'john',
-    [id2]: 21
-};
-let id = Symbol('id');
-user[id] = 1;
-console.log(user[id]);
-console.log(user[id2]);
+// let id2 = Symbol('id2');
+// let user = {
+//     name: 'john',
+//     [id2]: 21
+// };
+// let id = Symbol('id');
+// user[id] = 1;
+// console.log(user[id]);
+// console.log(user[id2]);
 
-for (let key in user) console.log(key);
+// for (let key in user) console.log(key);
 
 // .for('id') it is global registry 
-let id3 = Symbol.for('id');
-let id4 = Symbol.for('id');
+// let id3 = Symbol.for('id');
+// let id4 = Symbol.for('id');
 
 // both symbols are from the same key in the global registry they are strictly equal.
-console.log(id3 === id4);
+// console.log(id3 === id4);
 
-let sym = Symbol.for('name');
-let sym2 = Symbol.for("id");
-console.log(Symbol.keyFor(sym));
-console.log(Symbol.keyFor(sym2));
+// let sym = Symbol.for('name');
+// let sym2 = Symbol.for("id");
+// console.log(Symbol.keyFor(sym));
+// console.log(Symbol.keyFor(sym2));
 
 /*The Symbol.keyFor internally 
 uses the global symbol registry
@@ -302,11 +302,44 @@ uses the global symbol registry
  symbols. If the symbol is not global,
  it won’t be able to find it and returns undefined. */
 
- let globalsymbol=Symbol.for('names');
- let localsymbol=Symbol('names2');
- console.log(Symbol.keyFor(globalsymbol));
- console.log(Symbol.keyFor(localsymbol));
-console.log(localsymbol.description);
+//  let globalsymbol=Symbol.for('names');
+//  let localsymbol=Symbol('names2');
+//  console.log(Symbol.keyFor(globalsymbol));
+//  console.log(Symbol.keyFor(localsymbol));
+// console.log(localsymbol.description);
 
  
+// Object to primitive conversion 
+
+let user={
+    name:'john',
+    money:1090,
+    toString(){
+        return `name: '${this.name}'`;
+    },
+    valueOf(){
+        return this.money
+    },
+
+    // [Symbol.toPrimitive](hint){
+    //     console.log(`hint:${hint}`);
+    // return hint == 'string' ?    `{name: '${this.name}'  }`: this.money;
+        
+    // }
+}
+console.log(user);
+console.log(+user);
+console.log(user + 500);
+
+let obj={
+    toString(){
+        return '2';
+    }
+}
+
+console.log(obj * 2);
+console.log(obj + 2);
+
+
+
 
