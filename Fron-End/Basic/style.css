@@ -1,0 +1,53 @@
+#ani {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: aniDiv;
+    animation-duration: 4s;
+    position: relative;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+#ani2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: aniDiv2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes aniDiv {
+
+    0%{
+        left: 0px; top: 0px;
+    }
+    35%{
+        left: 103px; top: 30px;
+    }
+    64%{
+        left: 200px; top: 60px;
+    }
+    80%{
+        left: 0px; top:90px;
+    }
+}
+
+@keyframes aniDiv2 {
+    0% {
+        background-color: blue; left: 0px; top: 0px;
+    }
+    25%{
+        background-color: aqua; left: 200px; top: 0px;
+    }
+    50%{
+        background-color: greenyellow; left: 0px; top: 200px;
+    }
+    100%{
+        background-color: bisque; left: 0px; top: 0px;
+    }
+}

@@ -1,12 +1,15 @@
 //path
 // const path = require('path');
-// const OS =require('os')
+const OS =require('os')
 // const fs=require('fs')
 
 // console.log(path.parse(__filename));
 // console.log(path.parse(__dirname));
 
 // console.log('file extension' + path.extname(__filename));
+
+console.log(OS.version());
+
 
 // //OS
 // console.log(OS.version());
