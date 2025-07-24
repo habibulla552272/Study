@@ -1,5 +1,6 @@
 import './App.css';
 import AddTodo from './component/AddTodo';
+import Counter from './component/Counter';
 import TodoList from './component/TodoList';
 import { TodosContextProvider } from './contexts/Todoscontext';
 
@@ -13,6 +14,7 @@ function App() {
         <AddTodo />
         <TodoList />
       </TodosContextProvider>
+      <Counter />
     </section>
   );
 }
