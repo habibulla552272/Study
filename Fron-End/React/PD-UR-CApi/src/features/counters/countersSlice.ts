@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import initialCountersData from "../../data/counterData";
 
-// Counter এর টাইপ ডিফাইন করা
+
 export interface CounterType {
   id: number;
   value: number;

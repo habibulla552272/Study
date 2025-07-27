@@ -1,11 +1,11 @@
 import React from 'react'
 
-const SingleCounter = () => {
+const page = () => {
   return (
     <div>
-      
+       page number
     </div>
   )
 }
 
-export default SingleCounter
+export default page

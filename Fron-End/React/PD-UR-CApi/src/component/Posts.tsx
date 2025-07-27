@@ -1,6 +1,8 @@
 import React from 'react'
 
-const SingleCounter = () => {
+
+const Posts = () => {
+    
   return (
     <div>
       
@@ -8,4 +10,4 @@ const SingleCounter = () => {
   )
 }
 
-export default SingleCounter
+export default Posts
