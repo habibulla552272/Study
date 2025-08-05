@@ -1,8 +1,9 @@
-'use client'
 
+
+import FormData from "@/components/FormData";
 import { getUser } from "@/FetchData/fetchdata";
 import { useQuery } from "@tanstack/react-query";
-import Link from "next/link";
+
 
 interface user {
   name: string;
@@ -10,21 +11,22 @@ interface user {
 }
 
 export default function Home() {
-  const { data, isLoading, isError } = useQuery({
-    queryKey: ['users'],
-    queryFn: getUser,
-  })
-  if (isError) {
-    return <h2>Error</h2>
-  }
-  if (isLoading) {
-    return <h2>loading....</h2>
-  }
+  // const { data, isLoading, isError } = useQuery({
+  //   queryKey: ['users'],
+  //   queryFn: getUser,
+  // })
+  // if (isError) {
+  //   return <h2>Error</h2>
+  // }
+  // if (isLoading) {
+  //   return <h2>loading....</h2>
+  // }
 
   return (
     <>
       <h2>hey bro</h2>
-      {
+      <FormData />
+      {/* {
         data?.map((item: user) => {
           return (
             <Link key={item.id} href={`/post-list/${item.id}`}>
@@ -33,7 +35,7 @@ export default function Home() {
 
           )
         })
-      }
+      } */}
     </>
   );
 }

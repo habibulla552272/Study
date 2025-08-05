@@ -117,24 +117,40 @@
 
 // data Destructuring 
 
-const person = {
-    name: 'habib',
-    age: 21,
-    city: "dhaka"
-}
-const { name:names, age, city } = person;
-console.log(names);
-console.log(age);
+// const person = {
+//     name: 'habib',
+//     age: 21,
+//     city: "dhaka"
+// }
+// const { name:names, age, city } = person;
+// console.log(names);
+// console.log(age);
 
-// nested destructuring 
-const user={
-    id:1,
-    profile:{
-        username:'jonedoe',
-        email:'jon@doe.com',
+// // nested destructuring 
+// const user={
+//     id:1,
+//     profile:{
+//         username:'jonedoe',
+//         email:'jon@doe.com',
 
-    }
-}
+//     }
+// }
 
-const {id, profile:{username,email}}=user;
-console.log(`${username} and ${email``}`);
+// const {id, profile:{username,email}}=user;
+// console.log(`${username} and ${email``}`);
+
+
+
+
+
+
+
+//array from 
+
+let x = 5;
+
+
+Array.from({length:x}).map(item=>{
+    console.log(item);
+    
+})
