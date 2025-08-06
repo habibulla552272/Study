@@ -154,3 +154,10 @@ Array.from({length:x}).map(item=>{
     console.log(item);
     
 })
+
+console.log((3+1)%4);
+console.log((3-1+4)%4);
+console.log(2-1);
+
+
+
