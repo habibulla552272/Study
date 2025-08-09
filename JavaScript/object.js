@@ -63,12 +63,4 @@ function ask(ques,...hand) {
             han(isYes)
         }
     }
-    
-}
-
-ask('Question',()=> console.log('you said yes'),result=> console.log(result));
-
-
-function sayhi2(){
-    
 }
