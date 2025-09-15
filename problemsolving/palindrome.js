@@ -20,3 +20,18 @@ function isPalindrom(str) {
 console.log(isPalindrom('peep'));
 console.log(isPalindrom('hello'));
 console.log(isPalindrom('rotator'))
+
+const isPalindrom2 = (str) => {
+    const reversed = str.split('').reverse()
+    const reversed2=str.split('').reverse().join('')
+    console.log('reverse',reversed)
+    return str === reverse;
+    return str === reversed2;
+}
+
+console.log(isPalindrom2('racecar'));
+console.log(isPalindrom2('hello'));
+console.log(isPalindrom2("rotator"));
+console.log(isPalindrom('rotator'))
+
+
