@@ -30,3 +30,8 @@ const person2={
     }
 }
 person2.great()
+
+
+// template literal
+let h=`habibulla islam habibulla`;
+console.log(h)
