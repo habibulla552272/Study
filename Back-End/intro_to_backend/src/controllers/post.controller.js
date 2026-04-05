@@ -36,3 +36,18 @@ export const getPostById = async (req, res) => {
         res.status(500).json({error: 'Failed to retrieve post'});
     }
 };  
+
+//delete a post by ID
+export const deletePostById = async (req, res) => {
+    try {   
+        const post = await Post.findByPk(req.params.id);
+        if (post) {
+            await post.destroy();   
+            res.status(200).json({message: 'Post deleted successfully'});
+        } else {
+            res.status(404).json({error: 'Post not found'});
+        }
+    } catch (error) {
+        res.status(500).json({error: 'Failed to delete post'});
+    }
+};

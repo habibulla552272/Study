@@ -9,4 +9,7 @@ app.use(express.json());
 // router declaration
 
 app.use("/api/v1/users",userRouter);
+app.get("/",(req,res)=>{
+    res.send("Welcome to the API");
+});
 export default app;
