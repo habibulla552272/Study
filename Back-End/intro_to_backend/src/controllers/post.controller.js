@@ -51,3 +51,18 @@ export const deletePostById = async (req, res) => {
         res.status(500).json({error: 'Failed to delete post'});
     }
 };
+
+//get all posts by user ID
+export const getPostsByUserId = async (req, res) => {   
+    try {
+
+        const posts = await Post.findAll({ where: { userId: req.params.userId } });
+        res.status(200).json(posts);
+    }
+    catch (error) {
+        res.status(500).json({error: 'Failed to retrieve posts for user'});
+    }
+
+
+};
+    
