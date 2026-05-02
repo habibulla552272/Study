@@ -6,10 +6,32 @@ const app = express();
 app.use(express.json());
 // routes import
 
+const demoMessages = [
+  "Express server is running",
+  "JSON parsing is enabled",
+  "Routes are mounted correctly",
+];
+
 app.get("/health", (req, res) => {
   res.status(200).json({
     status: "ok",
     uptime: process.uptime(),
+  });
+});
+
+app.get("/api/v1/demo", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "Demo route is working",
+    demoMessages,
+  });
+});
+
+app.post("/api/v1/demo/echo", (req, res) => {
+  res.status(201).json({
+    success: true,
+    received: req.body,
+    timestamp: new Date().toISOString(),
   });
 });
 
