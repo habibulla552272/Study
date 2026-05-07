@@ -34,6 +34,23 @@ router.use(logRequest);
 
 // Routes
 router.route("/").post(validatePostInput, createPost).get(getAllPosts);
+
+// Simple about route for quick API info
+const apiInfo = {
+  name: "Post API",
+  version: "1.0.0",
+  description: "A small Express router for managing posts",
+  endpoints: ["GET /", "POST /", "GET /:id", "PUT /:id", "DELETE /:id"],
+};
+
+router.get("/about", (req, res) => {
+  res.status(200).json({
+    message: "Welcome to the post API",
+    apiInfo,
+    timestamp: new Date().toISOString(),
+  });
+});
+
 router
   .route("/:id")
   .get(getPostById)
