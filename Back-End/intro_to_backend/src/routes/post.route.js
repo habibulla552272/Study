@@ -43,11 +43,29 @@ const apiInfo = {
   endpoints: ["GET /", "POST /", "GET /:id", "PUT /:id", "DELETE /:id"],
 };
 
+const randomPostIdeas = [
+  "Write a post about your favorite coding shortcut.",
+  "Share one backend debugging trick that saved your day.",
+  "Describe a small project you want to build next.",
+  "Explain a bug you fixed and what caused it.",
+];
+
+const getRandomItem = (items) =>
+  items[Math.floor(Math.random() * items.length)];
+
 router.get("/about", (req, res) => {
   res.status(200).json({
     message: "Welcome to the post API",
     apiInfo,
     timestamp: new Date().toISOString(),
+  });
+});
+
+router.get("/random", (req, res) => {
+  res.status(200).json({
+    message: "Random post idea generated",
+    idea: getRandomItem(randomPostIdeas),
+    seed: Math.random().toString(36).slice(2, 8),
   });
 });
 
