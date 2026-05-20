@@ -29,11 +29,33 @@ const createPost = async (req, res) => {
   }
 };
 
-// Get all posts
-const getAllPosts = async (_req, res) => {
+// Get all posts (with search and pagination feature)
+const getAllPosts = async (req, res) => {
   try {
-    const posts = await Post.find().sort({ createdAt: -1 });
-    return res.status(200).json(posts);
+    const { search, page = 1, limit = 10 } = req.query;
+    
+    // Build query object for search functionality
+    const query = {};
+    if (search) {
+      query.name = { $regex: search, $options: "i" }; // Case-insensitive search by name
+    }
+
+    // Pagination logic
+    const skip = (page - 1) * limit;
+
+    const posts = await Post.find(query)
+      .sort({ createdAt: -1 })
+      .skip(skip)
+      .limit(Number(limit));
+
+    const totalPosts = await Post.countDocuments(query);
+
+    return res.status(200).json({
+      posts,
+      currentPage: Number(page),
+      totalPages: Math.ceil(totalPosts / limit),
+      totalPosts
+    });
   } catch (error) {
     return res.status(500).json({
       message: "Failed to retrieve posts",

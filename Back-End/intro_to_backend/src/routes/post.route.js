@@ -11,14 +11,14 @@ const router = Router();
 
 // Validation middleware
 const validatePostInput = (req, res, next) => {
-  const { title, content } = req.body;
-  if (!title || !content) {
-    return res.status(400).json({ message: "Title and content are required" });
+  const { name, discription, age } = req.body;
+  if (!name || !discription || age === undefined) {
+    return res.status(400).json({ message: "Name, discription, and age are required" });
   }
-  if (title.length < 3) {
+  if (name.length < 3) {
     return res
       .status(400)
-      .json({ message: "Title must be at least 3 characters" });
+      .json({ message: "Name must be at least 3 characters" });
   }
   next();
 };
