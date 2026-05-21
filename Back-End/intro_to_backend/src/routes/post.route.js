@@ -1,4 +1,8 @@
 import { Router } from "express";
+import multer from 'multer';
+// use memory storage so we can upload buffer straight to Cloudinary
+const storage = multer.memoryStorage();
+const upload = multer({ storage });
 import {
   createPost,
   getAllPosts,
@@ -33,7 +37,7 @@ const logRequest = (req, res, next) => {
 router.use(logRequest);
 
 // Routes
-router.route("/").post(validatePostInput, createPost).get(getAllPosts);
+router.route("/").post(validatePostInput, upload.single('image'), createPost).get(getAllPosts);
 
 // Simple about route for quick API info
 const apiInfo = {

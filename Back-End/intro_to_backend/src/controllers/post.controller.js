@@ -1,6 +1,17 @@
 import { Post } from "../models/post.model.js";
+import cloudinary from "../config/cloudinary.js";
 
-// Create a new post
+// helper: upload buffer to Cloudinary
+const uploadToCloudinary = (buffer) =>
+  new Promise((resolve, reject) => {
+    const uploadStream = cloudinary.uploader.upload_stream({ folder: 'posts' }, (error, result) => {
+      if (error) return reject(error);
+      resolve(result);
+    });
+    uploadStream.end(buffer);
+  });
+
+// Create a new post (accepts optional file in `req.file` from multer)
 const createPost = async (req, res) => {
   try {
     const { name, discription, age } = req.body;
@@ -11,10 +22,17 @@ const createPost = async (req, res) => {
         .json({ message: "name, discription and age are required" });
     }
 
+    let imageUrl = null;
+    if (req.file && req.file.buffer) {
+      const result = await uploadToCloudinary(req.file.buffer);
+      imageUrl = result.secure_url;
+    }
+
     const newPost = await Post.create({
       name,
       discription,
       age,
+      image: imageUrl,
     });
 
     return res.status(201).json({
