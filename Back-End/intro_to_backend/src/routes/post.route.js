@@ -15,15 +15,24 @@ const router = Router();
 
 // Validation middleware
 const validatePostInput = (req, res, next) => {
+  // accept either `description` or the existing misspelled `discription`
+  if (req.body.description && !req.body.discription) {
+    req.body.discription = req.body.description;
+  }
+
   const { name, discription, age } = req.body;
   if (!name || !discription || age === undefined) {
-    return res.status(400).json({ message: "Name, discription, and age are required" });
+    return res.status(400).json({ message: "Name, description (or discription), and age are required" });
   }
   if (name.length < 3) {
-    return res
-      .status(400)
-      .json({ message: "Name must be at least 3 characters" });
+    return res.status(400).json({ message: "Name must be at least 3 characters" });
   }
+  // ensure age is a number (allow numeric strings)
+  const numericAge = Number(age);
+  if (Number.isNaN(numericAge)) {
+    return res.status(400).json({ message: "Age must be a number" });
+  }
+  req.body.age = numericAge;
   next();
 };
 
@@ -60,5 +69,16 @@ router
   .get(getPostById)
   .put(validatePostInput, updatePostById)
   .delete(deletePostById);
+
+// Multer / upload error handler + generic router error handler
+router.use((err, req, res, next) => {
+  if (!err) return next();
+  // Multer errors have a `code` or `name` property
+  if (err instanceof multer.MulterError || err.name === 'MulterError') {
+    return res.status(400).json({ message: err.message || 'File upload error', code: err.code });
+  }
+  console.error('Router error:', err);
+  return res.status(500).json({ message: 'Internal server error', error: err.message });
+});
 
 export default router;
