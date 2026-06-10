@@ -58,3 +58,20 @@ export function buildSamplePost(sample = { name: 'Bob', discription: 'Unsaved sa
 }
 
 
+export async function createAndSaveSamplePost(sample = { name: 'Alice', discription: 'Saved sample', age: 30 }, mongoUri) {
+    if (!mongoUri) {
+        throw new Error('MongoDB URI is required to save the sample post.');
+    }
+
+    try {
+        await mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true });
+        const post = new Post(sample);
+        const savedPost = await post.save();
+        return savedPost;
+    } catch (error) {
+        console.error('Error saving sample post:', error);
+        throw error;
+    } finally {
+        await mongoose.disconnect();
+    }
+}   
