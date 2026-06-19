@@ -21,12 +21,12 @@ const postSchema=new Schema(
         min: 1,
         max:150
     },
-    // image:{
-    //     type:String,
-    //     required:true,
-    //     trim:true,
+    image:{
+        type:String,
+        required:true,
+        trim:true,
 
-    // }
+    }
 
 },
 
