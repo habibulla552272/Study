@@ -5,7 +5,7 @@ const bcrypt = require("bcryptjs");
 
 const router = express.Router();
 
-const users = []; // Use a database in production
+const users = []; 
 
 // Register
 router.post("/register", async (req, res) => {
@@ -22,7 +22,7 @@ router.post("/register", async (req, res) => {
     message: "User registered successfully",
   });
 });
-
+// added some code here ...
 // Login
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
@@ -58,5 +58,3 @@ router.post("/login", async (req, res) => {
 });
 
 module.exports = router;
-
-dsafsdaf
