@@ -76,6 +76,3 @@ export async function createAndSaveSamplePost(sample = { name: 'Alice', discript
     }
 }   
 
-//today i learn now thing 
-//and list some items
-//and to do list 
