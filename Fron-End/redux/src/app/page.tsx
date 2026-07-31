@@ -402,9 +402,9 @@ export default function Home() {
                       <p className="text-sm font-semibold uppercase tracking-[0.25em] text-indigo-600 dark:text-indigo-300">Alerts</p>
                       <h3 className="mt-2 text-xl font-semibold text-slate-900 dark:text-white">Notification center</h3>
                     </div>
-                    {/* <button type="button" className="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white dark:bg-white dark:text-slate-900">
+                    <button type="button" className="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white dark:bg-white dark:text-slate-900">
                       3 new
-                    </button> */}
+                    </button>
                   </div>
 
                   <div className="mt-6 space-y-4">
