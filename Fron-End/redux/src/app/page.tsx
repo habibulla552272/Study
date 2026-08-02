@@ -397,7 +397,7 @@ export default function Home() {
                 </article>
 
                 <article className="rounded-4xl border border-white/60 bg-white/80 p-6 shadow-[0_18px_60px_-24px_rgba(15,23,42,0.3)] backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/60">
-                  {/* <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between">
                     <div>
                       <p className="text-sm font-semibold uppercase tracking-[0.25em] text-indigo-600 dark:text-indigo-300">Alerts</p>
                       <h3 className="mt-2 text-xl font-semibold text-slate-900 dark:text-white">Notification center</h3>
@@ -405,7 +405,7 @@ export default function Home() {
                     <button type="button" className="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white dark:bg-white dark:text-slate-900">
                       3 new
                     </button>
-                  </div> */}
+                  </div>
 
                   <div className="mt-6 space-y-4">
                     {notifications.map((item) => (
