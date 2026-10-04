@@ -21,7 +21,10 @@ int main(){
         // cout << "write your full name in one line: ";
         // getline(cin,name);
         // cout << name << endl;
-//
+//tow dimentional array
+    int arr[2][3];
+    int size=sizeof(arr);
+    cout << size << "bites"<<endl;
 // condition 
     
 
