@@ -22,9 +22,22 @@ int main(){
         // getline(cin,name);
         // cout << name << endl;
 //tow dimentional array
-    int arr[2][3];
-    int size=sizeof(arr);
-    cout << size << "bites"<<endl;
+    // int arr[2][3];
+    // int size=sizeof(arr);
+    // cout << size << "bites"<<endl;
+    // for(int i=0;i<2;i++){
+    //     for(int j=0;j<3;j++){
+
+    //     }
+    // }
+
+    int temp;
+    int arr[5]={4,2,9,22};
+    for (int i = 0; i < 4; i++){
+
+    }
+    
+    
 // condition 
     
 
