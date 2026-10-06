@@ -31,11 +31,11 @@ int main(){
     //     }
     // }
 
-    int temp;
-    int arr[5]={4,2,9,22};
-    for (int i = 0; i < 4; i++){
+    // int temp;
+    // int arr[5]={4,2,9,22};
+    // for (int i = 0; i < 4; i++){
 
-    }
+    // }
     
     
 // condition 
